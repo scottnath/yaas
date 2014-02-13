@@ -1,0 +1,14 @@
+<table>
+  <thead>
+  <tr>
+    <th>{{ 'THING_NAME_TITLE' | translate }}</th>
+    <th>{{ 'THING_ID_TITLE' | translate }}</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="thing in things | filter:search">
+    <td><a href="{{thing.id}}" target="_blank">{{thing.name}}</a></td>
+    <td>{{thing.id}}</td>
+  </tr>
+  </tbody>
+</table>
